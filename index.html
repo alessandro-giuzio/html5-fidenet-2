@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
+    <script src="https://kit.fontawesome.com/1aa21f1866.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
     <title>HTML 5up</title>
   </head>
   <body>
@@ -174,9 +175,9 @@
     <!-- Form & Contact Section -->
     <section id="contact">
       <!-- Container -->
-      <div class="flex flex-col  md:flex-row bg-darkViolet">
+      <div class="flex flex-col py-10  md:flex-row bg-darkViolet">
         <!-- Form -->
-        <form action="#" method="post" class="ml-4 flex flex-col justify-between items-center px-4 ">
+        <form action="#" method="post" class="ml-4 flex flex-col justify-between items-left px-4 ">
           <div class="flex gap-4 mb-4">
             <div class="flex flex-col gap-4 ">
               <label for="name" class="text-white uppercase text-xs font-semibold tracking-widest">
@@ -203,10 +204,117 @@
             <textarea name="" id="" cols="30" rows="8" class="bg-notsoDarkViolet"></textarea>
           </div>
         </form>
-        <!-- Contact -->
-      </div>
+        <div class="py-8 ml-4">
+          <ul class="flex ">
+            <li>
+              <input type="submit" value="Send Message" class="ml-4 text-darkViolet bg-white uppercase text-xs font-semibold tracking-widest px-4 py-3">
+            </li>
+            <li>
+              <input type="submit" value="Clear" class="ml-4 text-white bg-darkViolet border-white border uppercase text-xs font-semibold tracking-widest px-4 py-3">
+            </li>
+          </ul>
+        </div>
+        <!-- Contact Container-->
+        <div class="flex flex-col gap-16 py-8 border-t border-lighterViolet">
+          <!-- Container #1 -->
+          <div class="flex  gap-4 py-10 px-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <polyline points="3 7 12 13 21 7"></polyline>
+           </svg>
+            <div class="flex flex-col gap-2">
+              <p class="text-lg text-white font-semibold">Email</p>
+              <a href="#" class="text-sm text-white underline">information@untitled.tld</a>
+            </div>
+          </div>
+          <!-- Container #2 -->
+          <div class="flex  gap-4 border-t border-lighterViolet py-10 px-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+              <path d="M15 7a2 2 0 0 1 2 2"></path>
+              <path d="M15 3a6 6 0 0 1 6 6"></path>
+           </svg>
+            <div class="flex flex-col gap-2">
+              <p class="text-lg text-white font-semibold">Phone</p>
+              <p class="text-sm text-white">(000) 000-00000 x124356</p>
+            </div>
+          </div>
+          <!-- Container #3 -->
+          <div class="flex  gap-4 border-t border-lighterViolet py-10 px-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="3" y1="21" x2="21" y2="21"></line>
+              <line x1="9" y1="8" x2="10" y2="8"></line>
+              <line x1="9" y1="12" x2="10" y2="12"></line>
+              <line x1="9" y1="16" x2="10" y2="16"></line>
+              <line x1="14" y1="8" x2="15" y2="8"></line>
+              <line x1="14" y1="12" x2="15" y2="12"></line>
+              <line x1="14" y1="16" x2="15" y2="16"></line>
+              <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+           </svg>
+            <div class="flex flex-col gap-3">
+              <p class="text-lg text-white font-semibold">Address</p>
+              <p class="text-sm text-white">1234 Somewhere Road #5432 <br>
+                Nashville, TN 00000 <br>
+                United States of America</p>
+            </div>
+          </div>
+        </div>
+       </div>
     </section>
+    <!-- Footer -->
+    <footer class="flex flex-col py-8 bg-darkViolet">
 
-    <script src="app.js"></script>
+      <div class="social">
+        <ul class="flex ml-4 gap-4">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+       </svg>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+       </svg>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+          <circle cx="12" cy="12" r="3"></circle>
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+       </svg>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+       </svg>
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+          <line x1="8" y1="11" x2="8" y2="16"></line>
+          <line x1="8" y1="8" x2="8" y2="8.01"></line>
+          <line x1="12" y1="16" x2="12" y2="11"></line>
+          <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+       </svg>
+      </li>
+    </ul>
+      </div>
+      <div class="fine-print">
+         <ul>
+           <li class="text-white">	&copy; Untitled</li>
+           <li class="text-white">Design <a href="">HTML5 UP</a></li>
+         </ul>
+      </div>
+    </footer>
+
+    <script src="/js/app.js">
+    </script>
   </body>
 </html>
